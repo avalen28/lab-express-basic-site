@@ -2,8 +2,38 @@
 body {
   background-color: #f5dee7;
   font-family: "Montserrat", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
 }
-
+#container {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  background-color: #7e7d86;
+  border-radius: 10px;
+  padding: 20px;
+  height: 60%;
+  justify-content: space-around;
+}
+#img-title {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+}
+#img {
+  background-color: #4474c2;
+  border-radius: 100%;
+  width: 25%;
+  position: relative;
+  top: -100px;
+  left: -260px;
+}
 #title {
   font-family: "Dancing Script", cursive;
+}
+#article {
+  margin-top: 50px;
 }
