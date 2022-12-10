@@ -3,11 +3,19 @@ const app = express();
 app.use(express.static("public"));
 
 app.get("/", (req, res) => {
-  res.send("<h1>Welcome Ironhacker. :)</h1>");
+  res.sendFile(__dirname + "/views/index.html");
 });
 
-app.get("/prueba", (req, res) => {
-  res.sendFile(__dirname + "/views/index.html");
+app.get("/about", (req, res) => {
+  res.sendFile(__dirname + "/views/about.html");
+});
+
+app.get("/gallery", (req, res) => {
+  res.sendFile(__dirname + "/views/gallery.html");
+});
+
+app.get("/more-info", (req, res) => {
+  res.sendFile(__dirname + "/views/more-info.html");
 });
 
 app.listen(3000, () => {
