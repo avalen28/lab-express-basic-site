@@ -14,10 +14,6 @@ app.get("/gallery", (req, res) => {
   res.sendFile(__dirname + "/views/gallery.html");
 });
 
-app.get("/more-info", (req, res) => {
-  res.sendFile(__dirname + "/views/more-info.html");
-});
-
 app.listen(3000, () => {
   console.log("holi");
 });

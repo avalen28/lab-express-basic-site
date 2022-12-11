@@ -66,3 +66,11 @@ a {
   padding: 10px;
   z-index: 1;
 }
+#gallery-img {
+  display: flex;
+  justify-content: space-evenly;
+}
+#gallery-img img {
+  border-radius: 100%;
+  width: 20%;
+}
