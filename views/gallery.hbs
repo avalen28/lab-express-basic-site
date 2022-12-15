@@ -15,9 +15,9 @@
       </div>
       <h3 id="title">Bojack Horseman Gallery</h3>
       <div id="gallery-img">
-        <img src="img/bojack-about.png" alt="Bojack-photo" />
-        <img src="img/bojack-gallery-removebg-preview.png" alt="Bojack-photo" />
-        <img src="img/bojack-home.png" alt="Bojack-photo" />
+        {{#each sources}} {{! creamos "el bloque" haciendo un forEach del elemento del array source}}
+        {{>image this}}
+        {{/each}}
       </div>
       <nav class="nav-buttons">
         <a href="/about">About</a>
